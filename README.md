@@ -58,7 +58,9 @@ Ookla (Speedtest CLI için)
 PySide6 ekibi (Qt bağlamaları için)
 
 PlayFab sunucu listesi (dynamodb uç noktaları)# R6-Ping-Stabilizer-Turkish-English
-For siege Best server locker that has an ib-built speedtest!
+
+kurulum şöyle gençler bu dosyaları bi klasöre ayıklayın bat i çalıştırın sonra da exe yi istediğiniz yere setup yapmak istemedim uğraştırıcı çünkü
+For siege Best server locker that has an in-built speedtest!
 
 ENGLİSH 
 # R6 Server Optimizer
