@@ -5,6 +5,16 @@ echo R6 Server Optimizer - Bagimlilik Kurulumu
 echo ===============================================
 echo.
 
+:: Admin yetkisi kontrolü (winget için gerekli olabilir)
+net session >nul 2>&1
+if %errorlevel% neq 0 (
+    echo Bu script yonetici yetkisi gerektirebilir.
+    echo LUTFEN SAGA TIKLAYIP "Yonetici Olarak Calistir" ile tekrar deneyin.
+    echo.
+    pause
+    exit /b 1
+)
+
 :: Python kontrolu
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
@@ -16,7 +26,7 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-echo Python bulundu: 
+echo Python bulundu:
 python --version
 echo.
 
@@ -35,16 +45,16 @@ if %errorlevel% neq 0 (
 )
 echo PySide6 basariyla kuruldu.
 
-:: Winget kontrolu (Speedtest CLI icin)
+:: Winget kontrolu
 echo.
 echo Winget kontrol ediliyor...
 winget --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Winget bulunamadi! Winget genellikle Windows 10/11 ile gelir.
-    echo Speedtest CLI'yi manuel olarak https://speedtest.net/apps/cli adresinden kurabilirsiniz.
+    echo Winget bulunamadi! Speedtest CLI'yi manuel kurmaniz gerekecek.
+    echo https://speedtest.net/apps/cli adresinden indirip kurabilirsiniz.
 ) else (
     echo Winget bulundu. Speedtest CLI kuruluyor...
-    winget install -e --id Ookla.Speedtest.CLI --accept-package-agreements --accept-source-agreements
+    winget install -e --id Ookla.Speedtest.CLI --accept-package-agreements --accept-source-agreements --silent
     if %errorlevel% neq 0 (
         echo Speedtest CLI kurulumu basarisiz! Uygulama calistiginda tekrar deneyecektir.
     ) else (
@@ -55,6 +65,8 @@ if %errorlevel% neq 0 (
 echo.
 echo ===============================================
 echo Tum bagimliliklar basariyla kuruldu/denetlendi.
-echo Uygulamayi baslatmak icin R6_Optimizer.exe'yi calistirin.
+echo Uygulamayi baslatmak icin asagidaki komutu kullanabilirsiniz:
+echo python R6_Optimizer.py
+echo veya hazir EXE'yi calistirin.
 echo ===============================================
 pause
