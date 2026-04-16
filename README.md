@@ -1,26 +1,84 @@
-English:
+🚀 R6 SERVER OPTIMIZER – HADİ BAŞLATALIM! 🎮
+"Abi şimdi şöyle bir olay var..."
 
-R6 Server Optimizer – Standalone EXE
-The .exe file is fully standalone – it includes Python and PySide6. You can simply download it, drag it to your desktop, and double-click. No additional installation is required.
+🔍 Bu ne işe yarar?
+Rainbow Six Siege oynarken en düşük pingli sunucuya kitlenmek istemez misin? İşte bu araç tam olarak bunu yapıyor. Python ile yazıldı (evet, o Python) ama senin Python bilmene gerek yok – çünkü .exe dosyası her şeyi içinde taşıyor. 💪
 
-Speedtest CLI is NOT included in the EXE due to licensing and file size. The app will attempt to install it automatically via winget when you first press the Speedtest button. If winget is missing or fails, you will be prompted to install it manually from https://speedtest.net/apps/cli.
+⚙️ Nasıl çalışıyor?
+📡 Anlık ping taraması – Dünyanın dört bir yanındaki PlayFab sunucularına saniyede bir ping atar, en düşük gecikmeli olanı tepede gösterir.
 
-Note: The core features (ping monitoring, server locking, reset to default) work without Speedtest CLI. Only the speed test button requires it.
+🔒 Tek tıkla kilit – Seçtiğin sunucuyu GameSettings.ini dosyasına yazar, oyun artık hep oraya bağlanır.
 
-Testing status: The EXE has been built and tested on a single Windows 10/11 machine. The following components have NOT been tested in an environment without Python or PySide6 pre-installed. The batch script (install_dependencies.bat) is provided as a fallback – it installs Python, PySide6, and Speedtest CLI if needed. Use it if the EXE fails on your system.
+🔓 Default'a dön – Kilit yok, oyun kendi karar versin.
 
-TL;DR: Try the EXE first. If it complains about missing dependencies or Speedtest CLI, run the .bat file once.
+📊 Speedtest desteği – İstersen Ookla'nın resmi CLI'siyle hızını ölç. Ama bu özellik zorunlu değil, sadece süslü olsun diye duruyor. 😎
 
-Türkçe:
+🧪 Test durumu?
+⚠️ ŞU AN ŞÖYLE BİR DURUM VAR:
+Benim makinemde her şey tıkırında çalışıyor. Ama ikinci bir bilgisayarım yok, o yüzden speedtest CLI'sinin veya PySide6'nın hiç kurulu olmadığı bir ortamda .exe dosyası ne yapar – BUNU TEST ETMEDİM! 🥴
+Yani büyük ihtimalle çalışır (çünkü .exe bağımsızdır), ama garantiyi ben ancak siz söyleyince verebilirim. Siz deneyin, kırılırsa valla ben de şaşırırım. 🤷‍♂️
 
-R6 Server Optimizer – Bağımsız EXE
-.exe dosyası tamamen bağımsızdır – Python ve PySide6’yı içinde barındırır. İndirin, masaüstüne sürükleyin ve çift tıklayın. Ekstra bir kurulum gerekmez.
+📦 Şimdi ne yapacağız?
+İndir .exe dosyasını.
 
-Speedtest CLI, EXE’nin içinde DEĞİLDİR (lisans ve dosya boyutu nedeniyle). Uygulama, Speedtest butonuna ilk bastığınızda winget üzerinden otomatik kurmayı dener. Eğer winget yoksa veya kurulum başarısız olursa, manuel kurulum talimatlarını gösteren bir hata mesajı alırsınız.
+Masaüstüne sürükle – oradan çalıştır.
 
-Not: Ping izleme, sunucu kilitleme ve default’a çekme özellikleri Speedtest CLI olmadan çalışır. Sadece hız testi butonu bu araca ihtiyaç duyar.
+Aç – karşına şık siyah-beyaz bir pencere çıkacak.
 
-Test durumu: EXE, tek bir Windows 10/11 bilgisayarda derlenip test edilmiştir. Python veya PySide6’nın önceden kurulu olmadığı bir ortamda şu özellikler TEST EDİLMEMİŞTİR: otomatik winget kurulumu, tamamen temiz bir sistemde EXE’nin açılması. .bat dosyası (install_dependencies.bat) bir yedek olarak sunulmuştur – gerekirse Python, PySide6 ve Speedtest CLI’yi kurar. EXE sizin sisteminizde hata verirse .bat dosyasını bir kez çalıştırın.
+Sunucu seç – ping listesinden birine tıkla.
 
-Özet: Önce EXE’yi dene. Eksik bağımlılık veya Speedtest CLI hatası alırsan, .bat dosyasını çalıştır.
+"Kilitle" – işlem tamam!
 
+NOT: Eğer "Speedtest" butonuna basıp hata alırsan, demek ki sisteminde Ookla.Speedtest.CLI yok. O zaman install_dependencies.bat dosyasını çalıştır (yönetici olarak) – o kurulumu hallediyor. Ama yine de emin değilim çünkü test edemedim abi! 😅
+
+🧙‍♂️ Özetle:
+.exe => Çalışır (umarım).
+
+.bat => Gerekirse hız testi için bağımlılıkları kurar.
+
+Ben ikinci PC'de deneyemedim – siz cesur olun, hata bildirirseniz düzeltirim. ✌️
+
+Hadi R6'da görüşmek üzere, düşük pingler seninle olsun! 🚀🔥
+
+🚀 R6 SERVER OPTIMIZER – LET'S GET STARTED! 🎮
+
+"Hey, there's something I want to say..."
+
+🔍 What does this do?
+Wouldn't you want to lock onto the server with the lowest ping while playing Rainbow Six Siege? This tool does exactly that. It's written in Python (yes, it's Python), but you don't need to know Python – because the .exe file contains everything. 💪
+
+⚙️ How does it work?
+📡 Real-time ping scan – Pings PlayFab servers around the world every second, showing the one with the lowest latency at the top.
+
+🔒 One-click lock – Writes your chosen server to the GameSettings.ini file, and the game will always connect to that server.
+
+🔓 Revert to default – No lock, let the game decide.
+
+📊 Speedtest support – Measure your speed with Ookla's official CLI if you want. But this feature isn't mandatory, it's just there for show. 😎
+
+🧪 Test status?
+⚠️ CURRENTLY, THIS IS THE SITUATION:
+Everything works perfectly on my machine. But I don't have a second computer, so what does the .exe file do in an environment where neither the speedtest CLI nor PySide6 is installed – I HAVEN'T TESTED THIS! 🥴
+So it will most likely work (because the .exe is standalone), but I can only guarantee it if you tell me. You try it, I'd be surprised if it breaks. 🤷‍♂️
+
+📦 Now what do we do?
+Download the .exe file.
+
+Drag it to the desktop – run it from there.
+
+Open it – a nice black and white window will appear.
+
+Select a server – click on one from the ping list.
+
+"Lock" – process complete!
+
+NOTE: If you get an error when you press the "Speedtest" button, it means you don't have Ookla.Speedtest.CLI on your system. Then run the install_dependencies.bat file (as administrator) – it handles the installation. But I'm still not sure because I haven't been able to test it! 😅
+
+🧙‍♂️ In short:
+.exe => Works (hopefully).
+
+.bat => Installs dependencies for speed testing if needed.
+
+I haven't been able to test it on a second PC – be brave, report any errors and I'll fix them. ✌️
+
+See you in R6, may you have low pings! 🚀🔥
